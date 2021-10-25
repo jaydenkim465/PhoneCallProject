@@ -1,19 +1,12 @@
 package com.jaydenkim465.phonecallproject
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
-import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.google.android.material.tabs.TabItem
-import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
 	private lateinit var viewPagerAdapter: ViewPagerAdapter
@@ -28,9 +21,9 @@ class MainActivity : AppCompatActivity() {
 	private fun setUI() {
 		viewPagerAdapter = ViewPagerAdapter(this)
 		MainViewPager2.adapter = viewPagerAdapter
-		val tabTitles = listOf<Int>(R.string.textNumberPad, R.string.textHistory, R.string.textContracts, R.string.textRank)
+		val tabTitles = listOf(R.string.textNumberPad, R.string.textHistory, R.string.textContracts, R.string.textRank)
 		TabLayoutMediator(MainTabLayout, MainViewPager2) {tab, position ->
-			tab.text = getString(tabTitles[position]);
+			tab.text = getString(tabTitles[position])
 		}.attach()
 	}
 

@@ -8,4 +8,17 @@
 	<string name="textDelete">Del</string>
 	<string name="textVoiceCall">음성</string>
 	<string name="textFaceCall">화상</string>
+	<string name="textNumeric1">1</string>
+	<string name="textNumeric2">2</string>
+	<string name="textNumeric3">3</string>
+	<string name="textNumeric4">4</string>
+	<string name="textNumeric5">5</string>
+	<string name="textNumeric6">6</string>
+	<string name="textNumeric7">7</string>
+	<string name="textNumeric8">8</string>
+	<string name="textNumeric9">9</string>
+	<string name="textNumeric0">0</string>
+	<string name="textSymbolStar">*</string>
+	<string name="textSymbolSharp">#</string>
+	<string name="textEmpty"> </string>
 </resources>

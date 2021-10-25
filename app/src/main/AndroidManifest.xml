@@ -8,7 +8,9 @@
 		android:label="@string/appName"
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
-		android:theme="@style/Theme.PhoneCallProject">
+		android:theme="@style/Theme.PhoneCallProject"
+		android:fullBackupOnly="false"
+		>
 		<activity
 			android:name=".MainActivity"
 			android:exported="true">
