@@ -1,0 +1,11 @@
+<resources>
+	<string name="appName">[TEST]PhoneCall</string>
+	<string name="textCall">Call</string>
+	<string name="textNumberPad">NumberPad</string>
+	<string name="textContracts">Contracts</string>
+	<string name="textHistory">History</string>
+	<string name="textRank">Rank</string>
+	<string name="textDelete">Del</string>
+	<string name="textVoiceCall">Call</string>
+	<string name="textFaceCall">Face</string>
+</resources>

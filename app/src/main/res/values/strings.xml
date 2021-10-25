@@ -1,0 +1,11 @@
+<resources>
+	<string name="appName">[TEST]전화</string>
+	<string name="textCall">전화</string>
+	<string name="textNumberPad">숫자패드</string>
+	<string name="textContracts">연락처</string>
+	<string name="textHistory">전화이력</string>
+	<string name="textRank">랭킹</string>
+	<string name="textDelete">Del</string>
+	<string name="textVoiceCall">음성</string>
+	<string name="textFaceCall">화상</string>
+</resources>
