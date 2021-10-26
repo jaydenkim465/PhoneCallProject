@@ -11,6 +11,10 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_number_pad.*
 import java.util.regex.Pattern
 
+/**
+ * TODO: 추후 아래와 같이 직접 전화를 걸고 받을 수 있는 기능 구현 필요
+ * https://developer.android.com/guide/topics/connectivity/telecom/selfManaged?hl=ko
+ */
 class NumberPad : Fragment() {
 	override fun onCreateView(
 		inflater: LayoutInflater, container: ViewGroup?,
