@@ -10,4 +10,5 @@
 
 	<color name="colorMainBackground">@color/black</color>
 	<color name="colorMainText">@color/white</color>
+	<color name="colorTransparent">#00000000</color>
 </resources>

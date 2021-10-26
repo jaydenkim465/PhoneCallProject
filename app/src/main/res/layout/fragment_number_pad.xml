@@ -15,16 +15,18 @@
 		android:orientation="horizontal"
 		android:weightSum="3"
 		android:layout_weight="1">
+		<!-- TODO: 추후 custom 하여 줄바꿈 및 글자크기 자동 구현 필요 -->
 		<EditText
 			android:id="@+id/NumberInputEditText"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:autoSizeTextType="uniform"
+			android:textSize="40sp"
 			android:gravity="center"
 			android:textIsSelectable="true"
 			android:inputType="phone"
 			android:hint="@string/textEmpty"
 			android:autofillHints="false"
+			tools:text="010-1234-5678-12321"
 			/>
 	</LinearLayout>
 
