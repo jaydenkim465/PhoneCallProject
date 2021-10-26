@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/LinearLayoutSettingItemBackArea"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:weightSum="2"
+	android:background="@color/colorMainBackground">
+	<TextView
+		android:id="@+id/TextViewSettingTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="start"
+		android:layout_weight="1"
+		android:padding="10dp"
+		android:textColor="@color/colorMainText"
+		tools:text="설정타이틀"/>
+	<TextView
+		android:id="@+id/TextViewSettingValue"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="end"
+		android:layout_weight="1"
+		android:padding="10dp"
+		android:textColor="@color/colorMainText"
+		tools:text="설정값"/>
+</LinearLayout>

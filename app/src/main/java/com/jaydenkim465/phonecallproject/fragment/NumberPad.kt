@@ -1,4 +1,4 @@
-package com.jaydenkim465.phonecallproject
+package com.jaydenkim465.phonecallproject.fragment
 
 import android.content.Intent
 import android.net.Uri
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.jaydenkim465.phonecallproject.R
 import kotlinx.android.synthetic.main.fragment_number_pad.*
 import java.util.regex.Pattern
 

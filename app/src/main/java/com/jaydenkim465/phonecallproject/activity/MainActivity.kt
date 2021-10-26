@@ -1,4 +1,4 @@
-package com.jaydenkim465.phonecallproject
+package com.jaydenkim465.phonecallproject.activity
 
 import android.Manifest
 import android.content.Intent
@@ -12,6 +12,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
+import com.jaydenkim465.phonecallproject.R
+import com.jaydenkim465.phonecallproject.fragment.NumberPad
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -60,7 +62,12 @@ class MainActivity : AppCompatActivity() {
 	private fun setUI() {
 		viewPagerAdapter = ViewPagerAdapter(this)
 		MainViewPager2.adapter = viewPagerAdapter
-		val tabTitles = listOf(R.string.textNumberPad, R.string.textHistory, R.string.textContracts, R.string.textRank)
+		val tabTitles = listOf(
+			R.string.textNumberPad,
+			R.string.textHistory,
+			R.string.textContracts,
+			R.string.textRank
+		)
 		TabLayoutMediator(MainTabLayout, MainViewPager2) {tab, position ->
 			tab.text = getString(tabTitles[position])
 		}.attach()
@@ -70,6 +77,9 @@ class MainActivity : AppCompatActivity() {
 	 * UI Event Listener 설정 함수
 	 */
 	private fun setCustomListener() {
+		TextViewSetting.setOnClickListener {
+			startActivity(Intent(this, SettingMenuList::class.java))
+		}
 	}
 
 	override fun onRequestPermissionsResult(

@@ -5,6 +5,9 @@
 	<string name="textContracts">연락처</string>
 	<string name="textHistory">전화이력</string>
 	<string name="textRank">랭킹</string>
+	<string name="textSetting">설정</string>
+
+	<!-- NumberPad -->
 	<string name="textDelete">Del</string>
 	<string name="textVoiceCall">음성</string>
 	<string name="textFaceCall">화상</string>
@@ -22,10 +25,26 @@
 	<string name="textSymbolSharp">#</string>
 	<string name="textEmpty"> </string>
 
+	<string name="textThemeSettingTitle">테마설정</string>
+	<string name="textThemeSettingDefault">시스템 기본값</string>
+	<string name="textThemeSettingDay">밝은 테마</string>
+	<string name="textThemeSettingNight">어두운 테마</string>
+	<array name="arrayThemeSettingList">
+		<item name="itemThemeSettingDefault">@string/textThemeSettingDefault</item>
+		<item name="itemThemeSettingDay">@string/textThemeSettingDay</item>
+		<item name="itemThemeSettingNight">@string/textThemeSettingNight</item>
+	</array>
+
 	<string name="textErrorIncorrectPhoneNumber">올바른 전화번호를 입력해주세요.</string>
 	<string name="textErrorPermissionDeniedTitle">권한 요청</string>
 	<string name="textErrorPermissionDeniedMessage">전화 권한이 필요합니다.\n설정화면에서 권한 허용을 해주세요.</string>
 
 	<string name="textPopupYes">네</string>
 	<string name="textPopupNo">아니오</string>
+	<string name="textPopupOk">확인</string>
+	<string name="textPopupCancel">취소</string>
+
+	<string name="textClose">닫기</string>
+
+	<string name="keySettingThemeMode">THEME_MODE_STATE</string>
 </resources>

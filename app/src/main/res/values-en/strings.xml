@@ -5,6 +5,9 @@
 	<string name="textContracts">Contracts</string>
 	<string name="textHistory">History</string>
 	<string name="textRank">Rank</string>
+	<string name="textSetting">Setting</string>
+
+	<!-- NumberPad -->
 	<string name="textDelete">Del</string>
 	<string name="textVoiceCall">Call</string>
 	<string name="textFaceCall">Face</string>
@@ -22,6 +25,16 @@
 	<string name="textSymbolSharp">#</string>
 	<string name="textEmpty"> </string>
 
+	<string name="textThemeSettingTitle">Theme</string>
+	<string name="textThemeSettingDefault">System Default</string>
+	<string name="textThemeSettingDay">Day Theme</string>
+	<string name="textThemeSettingNight">Night Theme</string>
+	<array name="arrayThemeSettingList">
+		<item name="itemThemeSettingDefault">@string/textThemeSettingDefault</item>
+		<item name="itemThemeSettingDay">@string/textThemeSettingDay</item>
+		<item name="itemThemeSettingNight">@string/textThemeSettingNight</item>
+	</array>
+
 	<string name="textErrorIncorrectPhoneNumber">Please insert right Phone Number.</string>
 	<string name="textErrorPermissionDeniedTitle">Permissions request</string>
 	<string name="textErrorPermissionDeniedMessage">We need the Phone Call permission for some reason.\n
@@ -29,4 +42,10 @@
 
 	<string name="textPopupYes">Yes</string>
 	<string name="textPopupNo">No</string>
+	<string name="textPopupOk">OK</string>
+	<string name="textPopupCancel">Cancel</string>
+
+	<string name="textClose">Close</string>
+
+	<string name="keySettingThemeMode">THEME_MODE_STATE</string>
 </resources>
