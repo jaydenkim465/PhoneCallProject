@@ -12,6 +12,8 @@ class MainApplication : Application() {
 	override fun onCreate() {
 		super.onCreate()
 		prefs = PreferenceUtil(applicationContext)
+
+		// 아래와 같이 구현하지 않으면 재시작 되어도 테마가 따라가지 않음
 		val themeMode = prefs.getInteger(getString(R.string.keySettingThemeMode), 0)
 		var mode = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
 		when(themeMode) {
