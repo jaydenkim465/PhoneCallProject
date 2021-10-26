@@ -21,4 +21,11 @@
 	<string name="textSymbolStar">*</string>
 	<string name="textSymbolSharp">#</string>
 	<string name="textEmpty"> </string>
+
+	<string name="textErrorIncorrectPhoneNumber">올바른 전화번호를 입력해주세요.</string>
+	<string name="textErrorPermissionDeniedTitle">권한 요청</string>
+	<string name="textErrorPermissionDeniedMessage">전화 권한이 필요합니다.\n설정화면에서 권한 허용을 해주세요.</string>
+
+	<string name="textPopupYes">네</string>
+	<string name="textPopupNo">아니오</string>
 </resources>

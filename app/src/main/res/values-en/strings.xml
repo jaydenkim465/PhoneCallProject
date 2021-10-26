@@ -21,4 +21,12 @@
 	<string name="textSymbolStar">*</string>
 	<string name="textSymbolSharp">#</string>
 	<string name="textEmpty"> </string>
+
+	<string name="textErrorIncorrectPhoneNumber">Please insert right Phone Number.</string>
+	<string name="textErrorPermissionDeniedTitle">Permissions request</string>
+	<string name="textErrorPermissionDeniedMessage">We need the Phone Call permission for some reason.\n
+		You need to move on Settings to grant some permissions</string>
+
+	<string name="textPopupYes">Yes</string>
+	<string name="textPopupNo">No</string>
 </resources>

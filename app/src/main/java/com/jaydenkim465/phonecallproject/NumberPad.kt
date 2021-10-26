@@ -1,11 +1,15 @@
 package com.jaydenkim465.phonecallproject
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_number_pad.*
+import java.util.regex.Pattern
 
 class NumberPad : Fragment() {
 	override fun onCreateView(
@@ -78,6 +82,22 @@ class NumberPad : Fragment() {
 		DeleteButton.setOnLongClickListener {
 			NumberInputEditText.setText("")
 			true
+		}
+
+		VoiceCallButton.setOnClickListener {
+			var originNumber = NumberInputEditText.text.toString()
+			if(originNumber.isNotEmpty()) {
+				// 전화번호 입력시에 검증하는 부분이 부족하여 우선 전화걸 때 확인하는 부분 구현
+				// TODO: 추후 TextWatcher 통해서 전화번호 검증 로직 강화 필요
+				val pattern = Pattern.compile("""^([0-9]|[*#])*$""")
+				originNumber = originNumber.replace("-","")
+				if(pattern.matcher(originNumber).find()) {
+					val voiceCall = Intent(Intent.ACTION_CALL, Uri.parse(String.format("tel:%s",originNumber)))
+					startActivity(voiceCall)
+					return@setOnClickListener
+				}
+			}
+			Toast.makeText(this.context, R.string.textErrorIncorrectPhoneNumber, Toast.LENGTH_SHORT).show()
 		}
 	}
 
