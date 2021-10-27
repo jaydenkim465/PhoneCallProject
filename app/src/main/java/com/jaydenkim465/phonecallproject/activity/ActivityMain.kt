@@ -10,16 +10,17 @@ import android.provider.Settings
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.tabs.TabLayoutMediator
 import com.jaydenkim465.phonecallproject.R
-import com.jaydenkim465.phonecallproject.adapter.ViewPagerAdapter
+import com.jaydenkim465.phonecallproject.adapter.AdapterViewPager
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-	private lateinit var viewPagerAdapter: ViewPagerAdapter
+class ActivityMain : AppCompatActivity() {
+	private lateinit var adapterViewPager: AdapterViewPager
 
 	private val permissionRequestCode = 1001
 	// Permission 요청할 목록
 	private val permissionList = arrayOf(
-		Manifest.permission.CALL_PHONE
+		Manifest.permission.CALL_PHONE,
+		Manifest.permission.READ_CALL_LOG
 	)
 
 	override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,8 +58,8 @@ class MainActivity : AppCompatActivity() {
 	 * UI 관련 설정 함수
 	 */
 	private fun setUI() {
-		viewPagerAdapter = ViewPagerAdapter(this)
-		MainViewPager2.adapter = viewPagerAdapter
+		adapterViewPager = AdapterViewPager(this)
+		MainViewPager2.adapter = adapterViewPager
 		val tabTitles = listOf(
 			R.string.textNumberPad,
 			R.string.textHistory,
@@ -75,7 +76,7 @@ class MainActivity : AppCompatActivity() {
 	 */
 	private fun setCustomListener() {
 		TextViewSetting.setOnClickListener {
-			startActivity(Intent(this, SettingMenuList::class.java))
+			startActivity(Intent(this, ActivitySettingMenu::class.java))
 		}
 	}
 

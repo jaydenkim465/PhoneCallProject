@@ -35,9 +35,13 @@ android {
 	kotlinOptions {
 		jvmTarget = '1.8'
 	}
+	buildFeatures {
+		viewBinding true
+	}
 }
 
 dependencies {
+	implementation 'androidx.recyclerview:recyclerview:1.2.0'
 	def lifecycle_version = "2.3.1"
 	// ViewModel
 	implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"

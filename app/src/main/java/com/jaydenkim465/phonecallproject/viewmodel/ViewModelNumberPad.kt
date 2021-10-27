@@ -3,7 +3,7 @@ package com.jaydenkim465.phonecallproject.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NumberPadViewModel : ViewModel() {
+class ViewModelNumberPad : ViewModel() {
 	private var originPhoneNumber = MutableLiveData<String>()
 	var displayPhoneNumber = MutableLiveData<String>()
 

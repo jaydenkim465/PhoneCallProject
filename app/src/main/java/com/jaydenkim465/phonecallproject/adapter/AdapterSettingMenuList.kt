@@ -18,8 +18,8 @@ import com.jaydenkim465.phonecallproject.util.SettingPopupDialog
  * @property mListItem ArrayList<SettingListItem>
  * @constructor
  */
-class SettingMenuListAdapter(private val listItems:ArrayList<SettingListItem>, private val fragmentActivity:FragmentActivity)
-	: RecyclerView.Adapter<SettingMenuListAdapter.ViewHolder>(), SettingPopupDialog.SettingPopupDialogListener {
+class AdapterSettingMenuList(private val listItems:ArrayList<SettingListItem>, private val fragmentActivity:FragmentActivity)
+	: RecyclerView.Adapter<AdapterSettingMenuList.ViewHolder>(), SettingPopupDialog.SettingPopupDialogListener {
 	// Dialog 에서 확인버튼을 눌렀을 때 이벤트 Listener 를 받아서 Parent 에 전달 목적으로 만든 interface 및 Listener
 	internal lateinit var listener:SettingAdapterDialogListener
 	interface SettingAdapterDialogListener {

@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.jaydenkim465.phonecallproject.adapter.SettingMenuListAdapter
+import com.jaydenkim465.phonecallproject.adapter.AdapterSettingMenuList
 import com.jaydenkim465.phonecallproject.data.KeyValuePair
 import com.jaydenkim465.phonecallproject.data.SettingListItem
 import com.jaydenkim465.phonecallproject.MainApplication
@@ -15,13 +15,13 @@ import kotlinx.android.synthetic.main.activity_setting_menu_list.*
 /**
  * 설정 목록 Activity
  * @property itemList ArrayList<SettingListItem>
- * @property settingAdapter SettingMenuListAdapter
+ * @property settingAdapter AdapterSettingMenuList
  */
-class SettingMenuList : AppCompatActivity(), SettingMenuListAdapter.SettingAdapterDialogListener {
+class ActivitySettingMenu : AppCompatActivity(), AdapterSettingMenuList.SettingAdapterDialogListener {
 	// 설정 목록들
 	private val itemList = ArrayList<SettingListItem>()
 	// RecyclerView 에 사용될 Adapter
-	private var settingAdapter = SettingMenuListAdapter(itemList, this)
+	private var settingAdapter = AdapterSettingMenuList(itemList, this)
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
@@ -58,7 +58,7 @@ class SettingMenuList : AppCompatActivity(), SettingMenuListAdapter.SettingAdapt
 		val themeMode = MainApplication.prefs.getInteger(getString(R.string.keySettingThemeMode), 0)
 		setThemeValue(themeMode)
 
-		settingAdapter = SettingMenuListAdapter(itemList, this)
+		settingAdapter = AdapterSettingMenuList(itemList, this)
 		settingAdapter.listener = this
 
 		setUI()

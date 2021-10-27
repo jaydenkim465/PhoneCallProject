@@ -4,6 +4,7 @@
 	package="com.jaydenkim465.phonecallproject">
 
 	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.READ_CALL_LOG"/>
 
 	<application
 		android:name=".MainApplication"
@@ -15,10 +16,10 @@
 		android:supportsRtl="true"
 		android:theme="@style/Theme.PhoneCallProject">
 		<activity
-			android:name=".activity.SettingMenuList"
+			android:name=".activity.ActivitySettingMenu"
 			android:exported="true" />
 		<activity
-			android:name=".activity.MainActivity"
+			android:name=".activity.ActivityMain"
 			android:exported="true">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />

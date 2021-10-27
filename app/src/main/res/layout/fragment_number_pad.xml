@@ -5,7 +5,7 @@
 	<data>
 		<variable
 			name="viewModel"
-			type="com.jaydenkim465.phonecallproject.viewmodel.NumberPadViewModel"/>
+			type="com.jaydenkim465.phonecallproject.viewmodel.ViewModelNumberPad"/>
 	</data>
 
 	<LinearLayout
@@ -15,7 +15,7 @@
 		android:orientation="vertical"
 		android:padding="15dp"
 		android:weightSum="6"
-		tools:context=".fragment.NumberPad">
+		tools:context=".fragment.FragmentNumberPad">
 
 		<LinearLayout
 			android:layout_width="match_parent"
