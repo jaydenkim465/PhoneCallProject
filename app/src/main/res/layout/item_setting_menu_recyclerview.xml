@@ -9,7 +9,7 @@
 	android:weightSum="2"
 	android:background="@color/colorMainBackground">
 	<TextView
-		android:id="@+id/TextViewSettingTitle"
+		android:id="@+id/textViewSettingTitle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:gravity="start"
@@ -18,7 +18,7 @@
 		android:textColor="@color/colorMainText"
 		tools:text="설정타이틀"/>
 	<TextView
-		android:id="@+id/TextViewSettingValue"
+		android:id="@+id/textViewSettingValue"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:gravity="end"

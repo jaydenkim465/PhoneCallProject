@@ -69,15 +69,15 @@ class ActivitySettingMenu : AppCompatActivity(), AdapterSettingMenuList.SettingA
 	 * UI 관련 설정 함수
 	 */
 	private fun setUI() {
-		RecyclerViewSettingList.layoutManager = LinearLayoutManager(this)
-		RecyclerViewSettingList.adapter = settingAdapter
+		recyclerViewSettingList.layoutManager = LinearLayoutManager(this)
+		recyclerViewSettingList.adapter = settingAdapter
 	}
 
 	/**
 	 * UI Event Listener 설정 함수
 	 */
 	private fun setCustomListener() {
-		TextViewClose.setOnClickListener {
+		textViewClose.setOnClickListener {
 			finish()
 		}
 	}

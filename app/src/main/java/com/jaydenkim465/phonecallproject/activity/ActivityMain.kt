@@ -59,14 +59,14 @@ class ActivityMain : AppCompatActivity() {
 	 */
 	private fun setUI() {
 		adapterViewPager = AdapterViewPager(this)
-		MainViewPager2.adapter = adapterViewPager
+		mainViewPager2.adapter = adapterViewPager
 		val tabTitles = listOf(
 			R.string.textNumberPad,
 			R.string.textHistory,
 			R.string.textContracts,
 			R.string.textRank
 		)
-		TabLayoutMediator(MainTabLayout, MainViewPager2) {tab, position ->
+		TabLayoutMediator(mainTabLayout, mainViewPager2) { tab, position ->
 			tab.text = getString(tabTitles[position])
 		}.attach()
 	}
@@ -75,7 +75,7 @@ class ActivityMain : AppCompatActivity() {
 	 * UI Event Listener 설정 함수
 	 */
 	private fun setCustomListener() {
-		TextViewSetting.setOnClickListener {
+		textViewSetting.setOnClickListener {
 			startActivity(Intent(this, ActivitySettingMenu::class.java))
 		}
 	}

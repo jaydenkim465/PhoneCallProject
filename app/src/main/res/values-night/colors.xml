@@ -8,7 +8,25 @@
 	<color name="black">#FF000000</color>
 	<color name="white">#FFFFFFFF</color>
 
-	<color name="colorMainBackground">@color/black</color>
-	<color name="colorMainText">@color/white</color>
+	<color name="red">@color/colorNightRed</color>
+	<color name="blue">@color/colorNightBlue</color>
+	<color name="green">@color/colorNightGreen</color>
+	<color name="gray">@color/colorNightGray</color>
+
 	<color name="colorTransparent">#00000000</color>
+	<color name="colorWhite20">#33FFFFFF</color>
+	<color name="colorBlack20">#33FFFFFF</color>
+	<color name="colorDayGray">#FFAAAAAA</color>
+	<color name="colorNightGray">#FF555555</color>
+
+	<color name="colorDayRed">#FFFF5555</color>
+	<color name="colorDayBlue">#FF5555FF</color>
+	<color name="colorDayGreen">#FF55FF55</color>
+	<color name="colorNightRed">#FFAA2222</color>
+	<color name="colorNightBlue">#FF2222AA</color>
+	<color name="colorNightGreen">#FF22AA22</color>
+
+	<color name="colorMainText">@color/white</color>
+	<color name="colorMainBackground">@color/black</color>
+	<color name="colorListItemBackground">@color/colorWhite20</color>
 </resources>

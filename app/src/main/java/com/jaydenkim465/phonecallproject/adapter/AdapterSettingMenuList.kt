@@ -32,8 +32,8 @@ class AdapterSettingMenuList(private val listItems:ArrayList<SettingListItem>, p
 	private val mListItem = listItems
 
 	class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
-		val titleTextView:TextView = view.findViewById(R.id.TextViewSettingTitle)
-		val valueTextView:TextView = view.findViewById(R.id.TextViewSettingValue)
+		val titleTextView:TextView = view.findViewById(R.id.textViewSettingTitle)
+		val valueTextView:TextView = view.findViewById(R.id.textViewSettingValue)
 		val backgroundArea:LinearLayout = view.findViewById(R.id.LinearLayoutSettingItemBackArea)
 	}
 

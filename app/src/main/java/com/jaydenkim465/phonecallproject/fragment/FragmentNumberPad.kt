@@ -44,13 +44,13 @@ class FragmentNumberPad : Fragment() {
 
 	private fun setUI() {
 		// 전화번호 입력란 부분에 focus 가 가더라도 키보드 표시 되지 않도록 하는 부분
-		NumberInputEditText.showSoftInputOnFocus = false
+		numberInputEditText.showSoftInputOnFocus = false
 	}
 
 	private fun setCustomListener() {
 		//TODO : 커서위치에 따른 삭제 구현 필요(TextWatcher)
-		VoiceCallButton.setOnClickListener {
-			var originNumber = NumberInputEditText.text.toString()
+		voiceCallButton.setOnClickListener {
+			var originNumber = numberInputEditText.text.toString()
 			if(originNumber.isNotEmpty()) {
 				// 전화번호 입력시에 검증하는 부분이 부족하여 우선 전화걸 때 확인하는 부분 구현
 				// TODO: 추후 TextWatcher 통해서 전화번호 검증 로직 강화 필요

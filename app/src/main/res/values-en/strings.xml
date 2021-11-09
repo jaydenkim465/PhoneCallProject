@@ -1,4 +1,5 @@
 <resources>
+	<!-- Menu -->
 	<string name="appName">[TEST]PhoneCall</string>
 	<string name="textCall">Call</string>
 	<string name="textNumberPad">NumberPad</string>
@@ -25,6 +26,11 @@
 	<string name="textSymbolSharp">#</string>
 	<string name="textEmpty"> </string>
 
+	<!-- History -->
+	<string name="textPhoneCall">Call</string>
+	<string name="textMessage">SMS</string>
+
+	<!-- Setting -->
 	<string name="textThemeSettingTitle">Theme</string>
 	<string name="textThemeSettingDefault">System Default</string>
 	<string name="textThemeSettingDay">Day Theme</string>
@@ -35,17 +41,19 @@
 		<item name="itemThemeSettingNight">@string/textThemeSettingNight</item>
 	</array>
 
+	<!-- Message -->
 	<string name="textErrorIncorrectPhoneNumber">Please insert right Phone Number.</string>
 	<string name="textErrorPermissionDeniedTitle">Permissions request</string>
 	<string name="textErrorPermissionDeniedMessage">We need the Phone Call permission for some reason.\n
 		You need to move on Settings to grant some permissions</string>
 
+	<!-- Popup -->
 	<string name="textPopupYes">Yes</string>
 	<string name="textPopupNo">No</string>
 	<string name="textPopupOk">OK</string>
 	<string name="textPopupCancel">Cancel</string>
-
 	<string name="textClose">Close</string>
 
+	<!-- Key -->
 	<string name="keySettingThemeMode">THEME_MODE_STATE</string>
 </resources>

@@ -23,9 +23,9 @@
 			android:orientation="horizontal"
 			android:weightSum="3"
 			android:layout_weight="1">
-			<!-- TODO: 추후 textwatcher 구현하여 Edittext로 변경 및 custom 하여 줄바꿈 및 글자크기 자동 구현 필요 -->
+			<!-- TODO: 추후 textwatcher 구현하여 Edittext 로 변경 및 custom 하여 줄바꿈 및 글자크기 자동 구현 필요 -->
 			<TextView
-				android:id="@+id/NumberInputEditText"
+				android:id="@+id/numberInputEditText"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -43,7 +43,7 @@
 			android:layout_weight="1">
 
 			<TextView
-				android:id="@+id/Number1Button"
+				android:id="@+id/number1Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -54,7 +54,7 @@
 				tools:ignore="NestedWeights" />
 
 			<TextView
-				android:id="@+id/Number2Button"
+				android:id="@+id/number2Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -64,7 +64,7 @@
 				android:onClick="@{()->viewModel.append(@string/textNumeric2)}"/>
 
 			<TextView
-				android:id="@+id/Number3Button"
+				android:id="@+id/number3Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -83,7 +83,7 @@
 			android:layout_weight="1">
 
 			<TextView
-				android:id="@+id/Number4Button"
+				android:id="@+id/number4Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -94,7 +94,7 @@
 				tools:ignore="NestedWeights"/>
 
 			<TextView
-				android:id="@+id/Number5Button"
+				android:id="@+id/number5Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -104,7 +104,7 @@
 				android:onClick="@{()->viewModel.append(@string/textNumeric5)}"/>
 
 			<TextView
-				android:id="@+id/Number6Button"
+				android:id="@+id/number6Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -124,7 +124,7 @@
 			android:layout_weight="1">
 
 			<TextView
-				android:id="@+id/Number7Button"
+				android:id="@+id/number7Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -135,7 +135,7 @@
 				tools:ignore="NestedWeights"/>
 
 			<TextView
-				android:id="@+id/Number8Button"
+				android:id="@+id/number8Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -145,7 +145,7 @@
 				android:onClick="@{()->viewModel.append(@string/textNumeric8)}"/>
 
 			<TextView
-				android:id="@+id/Number9Button"
+				android:id="@+id/number9Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -164,7 +164,7 @@
 			android:layout_weight="1">
 
 			<TextView
-				android:id="@+id/StarButton"
+				android:id="@+id/starButton"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -175,7 +175,7 @@
 				tools:ignore="NestedWeights"/>
 
 			<TextView
-				android:id="@+id/Number0Button"
+				android:id="@+id/number0Button"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -185,7 +185,7 @@
 				android:onClick="@{()->viewModel.append(@string/textNumeric0)}"/>
 
 			<TextView
-				android:id="@+id/SharpButton"
+				android:id="@+id/sharpButton"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -204,7 +204,7 @@
 			android:layout_weight="1">
 
 			<TextView
-				android:id="@+id/FaceCallButton"
+				android:id="@+id/faceCallButton"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -214,7 +214,7 @@
 				tools:ignore="NestedWeights"/>
 
 			<TextView
-				android:id="@+id/VoiceCallButton"
+				android:id="@+id/voiceCallButton"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
@@ -223,7 +223,7 @@
 				android:autoSizeTextType="uniform"/>
 
 			<TextView
-				android:id="@+id/DeleteButton"
+				android:id="@+id/deleteButton"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:gravity="center"
