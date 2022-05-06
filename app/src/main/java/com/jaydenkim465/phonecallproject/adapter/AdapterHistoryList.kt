@@ -13,7 +13,6 @@ class AdapterHistoryList(
 ) : RecyclerView.Adapter<AdapterHistoryList.ViewHolder>() {
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-
 		return ViewHolder(
 			ItemHistoryListBinding.inflate(
 				LayoutInflater.from(parent.context),
@@ -21,7 +20,6 @@ class AdapterHistoryList(
 				false
 			)
 		)
-
 	}
 
 	override fun onBindViewHolder(holder: ViewHolder, position: Int) {

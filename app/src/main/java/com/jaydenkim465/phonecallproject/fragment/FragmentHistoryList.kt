@@ -9,8 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.ItemTouchHelper.*
@@ -24,8 +22,7 @@ import kotlin.math.*
 /**
  * A fragment representing a list of Items.
  */
-class FragmentHistoryList(fragment: FragmentActivity) : Fragment() {
-	private val mFragment = fragment
+class FragmentHistoryList() : Fragment() {
 	private var columnCount = 1
 	private var historyList = ArrayList<HistoryData>()
 
@@ -70,8 +67,12 @@ class FragmentHistoryList(fragment: FragmentActivity) : Fragment() {
 		return view
 	}
 
-	fun getHistoryList() {
-		val cursor = mFragment.contentResolver.query(CallLog.Calls.CONTENT_URI, null, null, null, null)
+	fun getHistoryList(index:Int) {
+		if(requireActivity() == null) {
+			return
+		}
+
+		val cursor = requireActivity().contentResolver.query(CallLog.Calls.CONTENT_URI, null, null, null, null)
 		val numberIndex = cursor?.getColumnIndex(CallLog.Calls.NUMBER)
 		val typeIndex = cursor?.getColumnIndex(CallLog.Calls.TYPE)
 		val dateIndex = cursor?.getColumnIndex(CallLog.Calls.DATE)

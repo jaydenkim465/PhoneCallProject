@@ -14,7 +14,6 @@ import com.jaydenkim465.phonecallproject.fragment.FragmentRankList
  * @constructor
  */
 class AdapterViewPager(fragment: FragmentActivity) : FragmentStateAdapter(fragment) {
-	private val mFragment = fragment
 
 	override fun getItemCount(): Int = 4
 
@@ -22,7 +21,7 @@ class AdapterViewPager(fragment: FragmentActivity) : FragmentStateAdapter(fragme
 	override fun createFragment(position: Int): Fragment {
 		return when(position) {
 			0 -> FragmentNumberPad()
-			1 -> FragmentHistoryList(mFragment)
+			1 -> FragmentHistoryList()
 			2 -> FragmentContactList()
 			3 -> FragmentRankList()
 			else -> FragmentNumberPad()
